@@ -1,4 +1,6 @@
-﻿module BlackScholes
+﻿namespace OptionPricingTools
+
+module BlackScholes =
 
   open MathNet.Numerics.Distributions
   
@@ -28,20 +30,22 @@
     in
       exp(-r * T) * (K * norm.CumulativeDistribution(-d2) - S * norm.CumulativeDistribution(-d1)) 
 
-  let findIV (target:double) (S:double) (K:double) (r:double) (T:double) =
-    let rec NewtonRaphson sigma epsilon =
-      let optionPrice = call S K r sigma T
+  let findIV (target:double) (optType:string) (S:double) (K:double) (r:double) (T:double) =
+    let rec NewtonRaphson iter maxIter sigma epsilon =
+      let optionPrice = if optType = "C" then call S K r sigma T else put S K r sigma T
       let vega = vega S K r sigma T
       let diff = target - optionPrice
       let _ = printfn "%.2f" (abs diff)
       in
         if abs diff < epsilon then
           sigma
+        elif iter > maxIter then
+          failwith "Cannot converge"
         else
-          NewtonRaphson (sigma + diff / vega) epsilon
+          NewtonRaphson (iter + 1) maxIter (sigma + diff / vega) epsilon
     let guessSigma = 0.3 // Guess implied volatility of 30%
     let epsilon = 0.001
     in
-      NewtonRaphson guessSigma epsilon
+      NewtonRaphson 0 100 guessSigma epsilon
 
 

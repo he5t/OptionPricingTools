@@ -1,5 +1,5 @@
 <DnaLibrary Name="OptionPricingTools Add-In" RuntimeVersion="v4.0">
-  <ExternalLibrary Path="OptionPricingTools.exe" LoadFromBytes="true" Pack="true" />
+  <ExternalLibrary Path="OptionPricingTools.dll" LoadFromBytes="true" Pack="true" ExplicitExports="true" />
   
   <!-- 
        The RuntimeVersion attribute above allows two settings:

@@ -1,0 +1,12 @@
+C:\Users\Matt\Documents\Visual Studio 2017\Projects\OptionPricingTools\OptionPricingTools\bin\Release\OptionPricingTools-AddIn.dna
+C:\Users\Matt\Documents\Visual Studio 2017\Projects\OptionPricingTools\OptionPricingTools\bin\Release\OptionPricingTools.dll.config
+C:\Users\Matt\Documents\Visual Studio 2017\Projects\OptionPricingTools\OptionPricingTools\bin\Release\OptionPricingTools.XML
+C:\Users\Matt\Documents\Visual Studio 2017\Projects\OptionPricingTools\OptionPricingTools\bin\Release\OptionPricingTools.dll
+C:\Users\Matt\Documents\Visual Studio 2017\Projects\OptionPricingTools\OptionPricingTools\bin\Release\OptionPricingTools.pdb
+C:\Users\Matt\Documents\Visual Studio 2017\Projects\OptionPricingTools\OptionPricingTools\bin\Release\FSharp.Core.dll
+C:\Users\Matt\Documents\Visual Studio 2017\Projects\OptionPricingTools\OptionPricingTools\bin\Release\MathNet.Numerics.dll
+C:\Users\Matt\Documents\Visual Studio 2017\Projects\OptionPricingTools\OptionPricingTools\bin\Release\System.ValueTuple.dll
+C:\Users\Matt\Documents\Visual Studio 2017\Projects\OptionPricingTools\OptionPricingTools\bin\Release\MathNet.Numerics.xml
+C:\Users\Matt\Documents\Visual Studio 2017\Projects\OptionPricingTools\OptionPricingTools\bin\Release\FSharp.Core.xml
+C:\Users\Matt\Documents\Visual Studio 2017\Projects\OptionPricingTools\OptionPricingTools\obj\Release\OptionPricingTools.dll
+C:\Users\Matt\Documents\Visual Studio 2017\Projects\OptionPricingTools\OptionPricingTools\obj\Release\OptionPricingTools.pdb
