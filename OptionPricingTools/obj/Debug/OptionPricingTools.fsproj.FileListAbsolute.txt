@@ -1,0 +1,12 @@
+C:\Users\matth\Documents\Visual Studio 2015\Projects\OptionPricingTools\OptionPricingTools\bin\Debug\OptionPricingTools-AddIn.dna
+C:\Users\matth\Documents\Visual Studio 2015\Projects\OptionPricingTools\OptionPricingTools\bin\Debug\OptionPricingTools.XML
+C:\Users\matth\Documents\Visual Studio 2015\Projects\OptionPricingTools\OptionPricingTools\bin\Debug\OptionPricingTools.pdb
+C:\Users\matth\Documents\Visual Studio 2015\Projects\OptionPricingTools\OptionPricingTools\bin\Debug\FSharp.Core.dll
+C:\Users\matth\Documents\Visual Studio 2015\Projects\OptionPricingTools\OptionPricingTools\bin\Debug\MathNet.Numerics.dll
+C:\Users\matth\Documents\Visual Studio 2015\Projects\OptionPricingTools\OptionPricingTools\bin\Debug\System.ValueTuple.dll
+C:\Users\matth\Documents\Visual Studio 2015\Projects\OptionPricingTools\OptionPricingTools\bin\Debug\MathNet.Numerics.xml
+C:\Users\matth\Documents\Visual Studio 2015\Projects\OptionPricingTools\OptionPricingTools\bin\Debug\FSharp.Core.xml
+C:\Users\matth\Documents\Visual Studio 2015\Projects\OptionPricingTools\OptionPricingTools\obj\Debug\OptionPricingTools.pdb
+C:\Users\matth\Documents\Visual Studio 2015\Projects\OptionPricingTools\OptionPricingTools\bin\Debug\OptionPricingTools.exe.config
+C:\Users\matth\Documents\Visual Studio 2015\Projects\OptionPricingTools\OptionPricingTools\bin\Debug\OptionPricingTools.exe
+C:\Users\matth\Documents\Visual Studio 2015\Projects\OptionPricingTools\OptionPricingTools\obj\Debug\OptionPricingTools.exe

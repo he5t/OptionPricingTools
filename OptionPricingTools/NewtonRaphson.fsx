@@ -1,9 +1,10 @@
 ﻿
 // Newton Raphson Method
-#r @"C:\Users\Matt\Documents\Visual Studio 2017\Packages\mathnet.numerics.3.17.0\lib\net40\MathNet.Numerics.dll"
-
+//#r @"C:\Users\Matt\Documents\Visual Studio 2017\Packages\mathnet.numerics.3.17.0\lib\net40\MathNet.Numerics.dll"
 //#r @"C:\Users\matth\Documents\Visual Studio 2015\Packages\mathnet.numerics.3.17.0\lib\net40\MathNet.Numerics.dll"
 
+#r @"..\packages\MathNet.Numerics.3.17.0\lib\net40\MathNet.Numerics.dll"
+#r @"..\packages\ExcelDna.AddIn.0.33.9\tools\ExcelDna.Integration.dll"
 
 module BlackScholes =
 
@@ -50,6 +51,14 @@ let findIV (target:double) (S:double) (K:double) (r:double) (T:double) =
   let epsilon = 0.001
   in
     NewtonRaphson guessSigma epsilon
+
+module ExcelFunctions =
+  
+  open ExcelDna.Integration
+
+  [<ExcelFunctionAttribute(Description="Find implied volatility using Newton Raphson.")>]
+  let findIV target S K r T =
+    findIV target S K r T
 
 // Test
 let target = 7.92
