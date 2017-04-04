@@ -3,7 +3,7 @@
 module BlackScholes =
 
   open MathNet.Numerics.Distributions
-  
+
   let d1 S K r sigma T =
     (log(S/K) + (r + sigma * sigma / 2.0) * T) / (sigma * sqrt(T))
 
@@ -21,18 +21,21 @@ module BlackScholes =
     let d2 = d1 - sigma * sqrt(T)
     let norm = Normal()
     in
-      exp(-r * T) * (S * norm.CumulativeDistribution(d1) - K * norm.CumulativeDistribution(d2)) 
+      exp(-r * T) * (S * norm.CumulativeDistribution(d1) - K * norm.CumulativeDistribution(d2))
 
   let put S K r sigma T =
     let d1 = d1 S K r sigma T
     let d2 = d1 - sigma * sqrt(T)
     let norm = Normal()
     in
-      exp(-r * T) * (K * norm.CumulativeDistribution(-d2) - S * norm.CumulativeDistribution(-d1)) 
+      exp(-r * T) * (K * norm.CumulativeDistribution(-d2) - S * norm.CumulativeDistribution(-d1))
 
-  let findIV (target:double) (optType:string) (S:double) (K:double) (r:double) (T:double) =
+  let findIV (target:double) (optType:OptionType.t) (S:double) (K:double) (r:double) (T:double) =
     let rec NewtonRaphson iter maxIter sigma epsilon =
-      let optionPrice = if optType = "C" then call S K r sigma T else put S K r sigma T
+      let optionPrice =
+        match optType with
+        | OptionType.Call -> call S K r sigma T
+        | OptionType.Put -> put S K r sigma T
       let vega = vega S K r sigma T
       let diff = target - optionPrice
       let _ = printfn "%.2f" (abs diff)

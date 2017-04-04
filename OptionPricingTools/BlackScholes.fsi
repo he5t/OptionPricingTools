@@ -1,5 +1,5 @@
 ﻿namespace OptionPricingTools
 
 module BlackScholes =
-   
-   val findIV : double -> string -> double -> double -> double -> double -> double
+
+   val findIV : target:float -> optionType:OptionType.t -> S:float -> K:float -> r:float -> T:float -> double

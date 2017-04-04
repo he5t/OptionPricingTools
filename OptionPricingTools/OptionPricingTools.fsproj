@@ -65,6 +65,8 @@
     <Content Include="OptionPricingTools-AddIn.dna">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Compile Include="OptionType.fsi" />
+    <Compile Include="OptionType.fs" />
     <Compile Include="BlackScholes.fsi" />
     <Compile Include="BlackScholes.fs" />
     <Compile Include="ExcelFunctions.fs" />
