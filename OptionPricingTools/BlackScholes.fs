@@ -5,7 +5,7 @@ module BlackScholes =
   open MathNet.Numerics.Distributions
 
   let d1 S K r sigma T =
-    (log(S/K) + (r + sigma * sigma / 2.0) * T) / (sigma * sqrt(T))
+    (log(S/K) + (sigma * sigma / 2.0) * T) / (sigma * sqrt(T))
 
   let d2 S K r sigma T =
     let d1 = d1 S K r sigma T
