@@ -26,4 +26,4 @@ module ExcelFunctions =
         raise (System.ArgumentException())
       else
         let optType = OptionType.ofString optType
-        BlackScholes.findIV target optType S K r T
+        Black76.findIV target optType S K r T
